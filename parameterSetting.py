@@ -18,7 +18,7 @@ pdbDir = ''
 
 # Log directories
 dir_pdb         = appRoot+ '/PDB_files/'
-jsonDir         = appRoot+ 'cs_result/'
+jsonDir         = appRoot+ '/cs_result/'
 logDir          = appRoot+ '/log/'
 
 # creating One time folders
