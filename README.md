@@ -32,11 +32,18 @@ from your shell do following
  * [Modify the Parameter Setting] Change variable appRoot <pwd>
  * [All set]
  * [run the python code]
- 
+
 ## Example 
     []python pLv_search.py -p 3DP8.pdb -id 3DP8
     [output] ./cs_result/3DP8_plv.json
-  
+ 
+## About Output
+The json file has chain wise information of all protein chains in the PDB file. The architecture of resulant Json file is as following,
+* pdbId_Chain1
+  * pdbInfo {pdbId, chain}
+  * csModules {modules:{sseGroups:toplogyClass}, topology: {contactString, topology status}}
+  * pattern {Seq,sseDetail, ssestring, contactLog, residueDictionary, cs, csFormattedString}
+* pdbId_Chain2 ...
 ## Help and Bug report 
 mail to : taushifkhan@gmail.com
 
